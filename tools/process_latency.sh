@@ -2,7 +2,7 @@
 
 PROC_ID=$1
 
-if [ -d "/proc/$1" ]; then
+if [ -d "/proc/$PROC_ID" ]; then
 
 	cat /proc/$PROC_ID/schedstat > temp.txt
 
